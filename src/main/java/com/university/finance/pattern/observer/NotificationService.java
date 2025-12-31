@@ -4,12 +4,15 @@ import com.university.finance.model.Transaction;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Observer Pattern - Service de notification pour les transactions.
  * Envoie des notifications aux utilisateurs concernés.
  */
 public class NotificationService implements TransactionObserver {
+    private static final Logger logger = LoggerFactory.getLogger(NotificationService.class);
     private final List<String> notifications;
     
     public NotificationService() {
@@ -21,7 +24,7 @@ public class NotificationService implements TransactionObserver {
         String notification = createNotification(transaction);
         notifications.add(notification);
         // En production, on enverrait un email, SMS ou notification push
-        System.out.println("[NOTIFICATION] " + notification);
+        logger.info("[NOTIFICATION] {}", notification);
     }
     
     /**
