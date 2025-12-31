@@ -5,12 +5,14 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * Observer Pattern - Observateur qui enregistre un audit de toutes les transactions.
  * Suit le principe SRP en se concentrant uniquement sur l'audit.
  */
 public class AuditLogger implements TransactionObserver {
+    private static final Logger logger = LoggerFactory.getLogger(AuditLogger.class);
     private final List<String> auditLog;
     private static final DateTimeFormatter FORMATTER = 
         DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -24,7 +26,7 @@ public class AuditLogger implements TransactionObserver {
         String logEntry = formatLogEntry(transaction);
         auditLog.add(logEntry);
         // En production, on écrirait dans un fichier ou une base de données
-        System.out.println("[AUDIT] " + logEntry);
+        logger.info("[AUDIT] {}", logEntry);
     }
     
     /**
