@@ -974,26 +974,6 @@ refactored-finance-app/
 | **Nombre de tests** | 78 | >20 | ✅ 390% |
 | **Duplication code** | 0.0% | <3% | ✅ 100% |
 
-### 11.3 Scores Globaux
-
-```
-┌────────────────────────────────────────┐
-│      NOTES FINALES DU PROJET           │
-├────────────────────────────────────────┤
-│                                        │
-│  Tests Unitaires:          20/20  ⭐   │
-│  Couverture Code:          19/20  ⭐   │
-│  Qualité SonarQube:        20/20  ⭐   │
-│  Architecture:             20/20  ⭐   │
-│  CI/CD Pipeline:           20/20  ⭐   │
-│  Documentation:            20/20  ⭐   │
-│                                        │
-│  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
-│  SCORE TOTAL:             119/120      │
-│                           99.2%   🏆   │
-└────────────────────────────────────────┘
-```
-
 ---
 
 ## 12. Conclusion
@@ -1111,16 +1091,3 @@ docker logs sonarqube
 - **SonarQube**: http://localhost:9000/dashboard?id=refactored-finance-app
 - **Rapport JaCoCo**: file:///target/site/jacoco/index.html
 - **Jenkins**: http://localhost:8080 (si configuré)
-
-### C. Contacts
-
-- **Équipe Projet**: team@ensam.ma
-- **Support SonarQube**: https://community.sonarsource.com
-- **Documentation Jenkins**: https://www.jenkins.io/doc/
-
----
-
-**Rapport généré le:** 31 Décembre 2025  
-**Auteur:** Équipe de Développement  
-**Version du rapport:** 2.0 (Mise à jour finale)  
-**Statut:** ✅ VALIDÉ ET APPROUVÉ
