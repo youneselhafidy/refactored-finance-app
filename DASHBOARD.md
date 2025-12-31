@@ -29,7 +29,7 @@
 ║           RÉSULTATS DES TESTS                    ║
 ╠══════════════════════════════════════════════════╣
 ║  Total Tests           : 52                      ║
-║  Tests Réussis         : 52 ✓                    ║
+║  Tests Réussis         : 52                      ║
 ║  Tests Échoués         : 0                       ║
 ║  Tests Ignorés         : 0                       ║
 ║  Taux de Réussite      : 100%                    ║
@@ -57,11 +57,11 @@
 ╔════════════════════════════════════════════════════╗
 ║         COUVERTURE DE CODE JACOCO                  ║
 ╠════════════════════════════════════════════════════╣
-║  Instructions    : 61%  [941/1537]    █████████▓  ║
-║  Branches        : 62%  [51/82]       ██████▓     ║
-║  Lignes          : 61%  [231/376]     █████████▓  ║
-║  Méthodes        : 69%  [70/101]      ██████████  ║
-║  Classes         : 93%  [13/14]       █████████▓  ║
+║  Instructions    : 61%  [941/1537]    █████████▓   ║
+║  Branches        : 62%  [51/82]       ██████▓      ║
+║  Lignes          : 61%  [231/376]     █████████▓   ║
+║  Méthodes        : 69%  [70/101]      ██████████   ║
+║  Classes         : 93%  [13/14]       █████████▓   ║
 ╚════════════════════════════════════════════════════╝
 ```
 
@@ -94,31 +94,31 @@ MainApp (UI)        ░░░░░░░░░░░░░░░░░░░░
 │                    JENKINS PIPELINE                         │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  1. 📥 CHECKOUT          → Récupération du code Git        │
+│  1.  CHECKOUT          → Récupération du code Git           │
 │                                                             │
-│  2. 🔨 BUILD             → Compilation Maven                │
+│  2.  BUILD             → Compilation Maven                  │
 │                                                             │
-│  3. 🧪 TEST              → Exécution tests (52 tests)      │
+│  3.  TEST              → Exécution tests (52 tests)         │
 │                             ↓                               │
 │                          Publication JUnit                  │
 │                                                             │
-│  4. 📊 CODE COVERAGE     → Génération rapport JaCoCo       │
+│  4.  CODE COVERAGE     → Génération rapport JaCoCo          │
 │                             ↓                               │
 │                          Publication couverture             │
 │                                                             │
-│  5. 🔍 QUALITY ANALYSIS  → Analyse SonarQube               │
+│  5.  QUALITY ANALYSIS  → Analyse SonarQube                  │
 │                             ↓                               │
 │                          Envoi métriques                    │
 │                                                             │
-│  6. 🚦 QUALITY GATE      → Validation seuils qualité       │
+│  6.  QUALITY GATE      → Validation seuils qualité          │
 │                             ↓                               │
 │                          Timeout: 5 min                     │
 │                                                             │
-│  7. 📦 PACKAGE           → Création JAR exécutable         │
+│  7.  PACKAGE           → Création JAR exécutable            │
 │                             ↓                               │
 │                          Archivage artifacts                │
 │                                                             │
-│  📧 NOTIFICATIONS        → Email succès/échec              │
+│   NOTIFICATIONS        → Email succès/échec                 │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -241,12 +241,12 @@ TransactionObserver (Interface)
 ╔════════════════════════════════════════════╗
 ║        INDICATEURS DE QUALITÉ              ║
 ╠════════════════════════════════════════════╣
-║  Complexité Cyclomatique  : Faible        ║
-║  Couplage                 : Minimal       ║
-║  Cohésion                 : Élevée        ║
-║  Documentation            : Complète      ║
-║  Nomenclature             : Cohérente     ║
-║  Exception Handling       : Robuste       ║
+║  Complexité Cyclomatique  : Faible         ║
+║  Couplage                 : Minimal        ║
+║  Cohésion                 : Élevée         ║
+║  Documentation            : Complète       ║
+║  Nomenclature             : Cohérente      ║
+║  Exception Handling       : Robuste        ║
 ╚════════════════════════════════════════════╝
 ```
 
@@ -377,7 +377,7 @@ refactored-finance-app/
 ║  📋 Documentation     : COMPLÈTE ✅               ║
 ║  🎨 Design Patterns   : 3/3 IMPLÉMENTÉS ✅        ║
 ║                                                    ║
-║  ⚠️ Action requise: Configuration SonarQube      ║
+║   Action requise: Configuration SonarQube          ║
 ║                                                    ║
 ╚════════════════════════════════════════════════════╝
 ```
