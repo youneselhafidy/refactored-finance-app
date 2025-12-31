@@ -2,23 +2,24 @@
 
 **Date:** 31 Décembre 2025  
 **Projet:** Refactored Finance Application  
-**Version:** 1.0.0  
-**Statut:** ✅ **LIVRAISON COMPLÈTE**
-
+**Version:** 1.0.0
+**Réaliser par:**
+- EL ADNANI Ali
+- EL HAFIDY Younes
 ---
 
-## 📋 Résumé Exécutif
+## Résumé Exécutif
 
 Le projet de refactoring de l'application bancaire a été complété avec succès. L'application a été transformée d'un code "spaghetti" monolithique en une architecture modulaire professionnelle utilisant les design patterns, avec une couverture de tests de 86.9% et une qualité de code validée par SonarQube.
 
-### 🎯 Résultats Clés
-- ✅ **78 tests unitaires** (100% de succès)
-- ✅ **86.9% de couverture de code** (objectif: 80%)
-- ✅ **Quality Gate SonarQube: PASSED**
-- ✅ **0 bugs, 0 vulnérabilités, 0 code smells**
-- ✅ **3 design patterns implémentés**
-- ✅ **Architecture MVC avec contrôleur**
-- ✅ **Pipeline CI/CD complet**
+### Résultats Clés
+- **78 tests unitaires** (100% de succès)
+- **86.9% de couverture de code** (objectif: 80%)
+- **Quality Gate SonarQube: PASSED**
+- **0 bugs, 0 vulnérabilités, 0 code smells**
+- **3 design patterns implémentés**
+- **Architecture MVC avec contrôleur**
+- **Pipeline CI/CD complet**
 
 ---
 
@@ -26,7 +27,7 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
 
 ### 1.1 Résumé Global
 - **Total de tests:** 78
-- **Tests réussis:** 78 ✓
+- **Tests réussis:** 78 
 - **Tests échoués:** 0
 - **Tests ignorés:** 0
 - **Taux de réussite:** 100%
@@ -35,14 +36,14 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
 ### 1.2 Détails par Module
 
 #### Tests Modèles (12 tests)
-- ✓ **AccountTest**: 5 tests passés
+-  **AccountTest**: 5 tests passés
   - Test création compte
   - Test solde initial négatif (exception)
   - Test ajout transaction
   - Test historique transactions
   - Test toString
 
-- ✓ **UserTest**: 7 tests passés
+-  **UserTest**: 7 tests passés
   - Test création utilisateur
   - Test validation username vide
   - Test validation password court
@@ -54,20 +55,20 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
 #### Tests Design Patterns (27 tests)
 
 **Strategy Pattern (14 tests)**
-- ✓ **DepositStrategyTest**: 4 tests passés
+-  **DepositStrategyTest**: 4 tests passés
   - Test dépôt valide
   - Test validation montant négatif
   - Test création transaction
   - Test mise à jour solde
 
-- ✓ **WithdrawStrategyTest**: 5 tests passés
+-  **WithdrawStrategyTest**: 5 tests passés
   - Test retrait valide
   - Test solde insuffisant
   - Test validation montant négatif
   - Test création transaction
   - Test mise à jour solde
 
-- ✓ **TransferStrategyTest**: 5 tests passés
+-  **TransferStrategyTest**: 5 tests passés
   - Test transfert valide
   - Test solde insuffisant source
   - Test validation montant négatif
@@ -75,28 +76,28 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
   - Test création transactions multiples
 
 **Factory Pattern (4 tests)**
-- ✓ **AccountFactoryTest**: 4 tests passés
+-  **AccountFactoryTest**: 4 tests passés
   - Test création compte
   - Test numéro compte unique
   - Test séquence numéros
   - Test reset compteur
 
 **Observer Pattern (9 tests)**
-- ✓ **AuditLoggerTest**: 4 tests passés
+-  **AuditLoggerTest**: 4 tests passés
   - Test enregistrement transaction
   - Test format log
   - Test récupération logs récents
   - Test effacement logs
 
-- ✓ **NotificationServiceTest**: 5 tests passés
+-  **NotificationServiceTest**: 5 tests passés
   - Test notification dépôt
   - Test notification retrait
   - Test notification transfert sortant
   - Test notification transfert entrant
   - Test récupération notifications
 
-#### Tests Contrôleur (26 tests) 🆕
-- ✓ **BankingControllerTest**: 26 tests passés
+#### Tests Contrôleur (26 tests) 
+-  **BankingControllerTest**: 26 tests passés
   - **Tests de création de compte** (2 tests)
     - Test création avec succès
     - Test création avec échec
@@ -136,7 +137,7 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
     - Test login identifiants incorrects
 
 #### Tests Services (13 tests)
-- ✓ **BankingServiceTest**: 8 tests passés
+-  **BankingServiceTest**: 8 tests passés
   - Test création utilisateur
   - Test authentification
   - Test création compte
@@ -146,7 +147,7 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
   - Test récupération comptes utilisateur
   - Test statistiques
 
-- ✓ **TransactionServiceTest**: 5 tests passés
+-  **TransactionServiceTest**: 5 tests passés
   - Test exécution transaction avec stratégie
   - Test notification des observateurs
   - Test ajout/retrait observateurs
@@ -155,7 +156,7 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
 
 ## 2. Rapport de Couverture de Code (JaCoCo)
 
-### 2.1 Métriques Globales ✅
+### 2.1 Métriques Globales 
 - **Couverture Instructions:** 86.9% (1,340/1,542 instructions)
 - **Couverture Branches:** 78% (64/82 branches)
 - **Couverture Lignes:** 87% (267/307 lignes)
@@ -168,19 +169,19 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
 
 | Package | Instructions | Branches | Lignes | Méthodes | Classes | Statut |
 |---------|-------------|----------|--------|----------|---------|--------|
-| **controller** 🆕 | **80%** | **70%** | **82%** | **85%** | **100%** | ✅ Excellent |
-| **pattern.strategy** | **100%** | **94%** | **100%** | **100%** | **100%** | ✅ Parfait |
-| **pattern.factory** | **94%** | **75%** | **95%** | **100%** | **100%** | ✅ Excellent |
-| **pattern.observer** | **87%** | **60%** | **92%** | **100%** | **100%** | ✅ Très bien |
-| **service** | **83%** | **71%** | **90%** | **77%** | **100%** | ✅ Très bien |
-| **model** | **74%** | **66%** | **90%** | **85%** | **100%** | ✅ Bien |
-| **MainApp** | **EXCLU** | **EXCLU** | **EXCLU** | **EXCLU** | **EXCLU** | ⚪ N/A |
+| **controller**  | **80%** | **70%** | **82%** | **85%** | **100%** |  Excellent |
+| **strategy** | **100%** | **94%** | **100%** | **100%** | **100%** |  Parfait |
+| **factory** | **94%** | **75%** | **95%** | **100%** | **100%** |  Excellent |
+| **observer** | **87%** | **60%** | **92%** | **100%** | **100%** |  Très bien |
+| **service** | **83%** | **71%** | **90%** | **77%** | **100%** |  Très bien |
+| **model** | **74%** | **66%** | **90%** | **85%** | **100%** |  Bien |
+| **MainApp** | **EXCLU** | **EXCLU** | **EXCLU** | **EXCLU** | **EXCLU** |  N/A |
 
 ### 2.3 Analyse de la Couverture
 
-#### ✅ Points Forts
+####  Points Forts
 
-1. **BankingController (80%)** 🆕
+1. **BankingController (80%)** 
    - Nouvelle couche de contrôle testée exhaustivement
    - 26 tests couvrant tous les scénarios
    - Gestion d'erreurs validée
@@ -206,24 +207,24 @@ Le projet de refactoring de l'application bancaire a été complété avec succ�
    - Intégrations validées
    - Transactions testées
 
-#### 🎯 Objectif Atteint
+####  Objectif Atteint
 
 - **Objectif:** ≥ 80% de couverture
-- **Atteint:** 86.9% ✅
+- **Atteint:** 86.9% 
 - **Stratégie:** Exclusion de MainApp (interface console) de l'analyse
 - **Justification:** Focus sur la logique métier testable
 
 ### 2.4 Fichiers de Rapport Générés
-- ✓ `target/site/jacoco/index.html` - Rapport HTML interactif
-- ✓ `target/site/jacoco/jacoco.xml` - Rapport XML pour SonarQube
-- ✓ `target/site/jacoco/jacoco.csv` - Données CSV pour analyse
-- ✓ `target/jacoco.exec` - Données binaires d'exécution
+-  `target/site/jacoco/index.html` - Rapport HTML interactif
+-  `target/site/jacoco/jacoco.xml` - Rapport XML pour SonarQube
+-  `target/site/jacoco/jacoco.csv` - Données CSV pour analyse
+-  `target/jacoco.exec` - Données binaires d'exécution
 
 ---
 
-## 3. Analyse de Qualité SonarQube ✅
+## 3. Analyse de Qualité SonarQube 
 
-### 3.1 Quality Gate: **PASSED** 🎉
+### 3.1 Quality Gate: **PASSED** 
 
 L'analyse SonarQube a été exécutée avec succès et le projet a **passé tous les critères de qualité**.
 
@@ -240,35 +241,35 @@ L'analyse SonarQube a été exécutée avec succès et le projet a **passé tous
 | **Duplications** | **0.0%** | ≤ 3.0% | ✅ |
 | **Security Hotspots** | **0** | 0 | ✅ (A) |
 
-#### 🐛 Bugs
+####  Bugs
 - **Nombre:** 0
 - **Rating:** A (Aucun bug détecté)
 - **Dette de fiabilité:** 0 min
 
-#### 🔒 Vulnérabilités
+####  Vulnérabilités
 - **Nombre:** 0
 - **Rating:** A (Aucune vulnérabilité)
 - **Dette de sécurité:** 0 min
 
-#### 🔍 Code Smells
+####  Code Smells
 - **Nombre:** 0 (nouveau code)
 - **Rating:** A
 - **Dette technique:** ~2h (sur l'ensemble du code)
 - **Ratio dette/code:** < 1%
 
-#### 📈 Couverture
+####  Couverture
 - **Couverture lignes:** 86.9%
 - **Lignes à couvrir:** 329 nouvelles lignes
 - **Lignes non couvertes:** 43 lignes
 - **Configuration:** MainApp complètement exclu
 
-#### 🔄 Duplications
+####  Duplications
 - **Taux de duplication:** 0.0%
 - **Lignes dupliquées:** 0
 - **Blocs dupliqués:** 0
 - **Fichiers avec duplication:** 0
 
-#### 🔐 Security Hotspots
+####  Security Hotspots
 - **Nombre:** 0
 - **Rating:** A (Excellent)
 - **Points sensibles à revoir:** 0
@@ -321,12 +322,12 @@ mvn clean test jacoco:report
 mvn sonar:sonar \
   -Dsonar.projectKey=refactored-finance-app \
   -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=sqa_2ec34dadebd1169402f664a09345d51d5dce4458
+  -Dsonar.login=YourToken
 ```
 
 ### 3.5 Analyse Détaillée
 
-#### ✅ Points Forts Identifiés par SonarQube
+####  Points Forts Identifiés par SonarQube
 
 1. **Architecture Propre**
    - Séparation des responsabilités respectée
@@ -353,7 +354,7 @@ mvn sonar:sonar \
    - Utilisation efficace des ressources
    - Algorithmes optimisés
 
-#### 📝 Observations
+####  Observations
 
 - MainApp correctement exclu de toutes les métriques
 - Aucun avertissement bloquant
@@ -368,7 +369,7 @@ mvn sonar:sonar \
 
 Le pipeline CI/CD est configuré avec **7 stages** fonctionnels :
 
-#### Stage 1: Checkout ✅
+#### Stage 1: Checkout 
 ```groovy
 stage('Checkout') {
     steps {
@@ -379,7 +380,7 @@ stage('Checkout') {
 - ✓ Récupération du code source depuis Git
 - ✓ Clonage du repository
 
-#### Stage 2: Build ✅
+#### Stage 2: Build 
 ```groovy
 stage('Build') {
     steps {
@@ -391,7 +392,7 @@ stage('Build') {
 - ✓ Résolution des dépendances
 - ✓ Génération des classes
 
-#### Stage 3: Test ✅
+#### Stage 3: Test 
 ```groovy
 stage('Test') {
     steps {
@@ -408,7 +409,7 @@ stage('Test') {
 - ✓ Publication des résultats JUnit
 - ✓ Rapport de succès/échec
 
-#### Stage 4: Code Coverage ✅
+#### Stage 4: Code Coverage 
 ```groovy
 stage('Code Coverage') {
     steps {
@@ -431,7 +432,7 @@ stage('Code Coverage') {
 - ✓ Exclusion de MainApp
 - ✓ Vérification du seuil 80%
 
-#### Stage 5: Code Quality Analysis ✅
+#### Stage 5: Code Quality Analysis 
 ```groovy
 stage('Code Quality Analysis') {
     steps {
@@ -445,7 +446,7 @@ stage('Code Quality Analysis') {
 - ✓ Envoi des métriques
 - ✓ Rapport de qualité généré
 
-#### Stage 6: Quality Gate ✅
+#### Stage 6: Quality Gate 
 ```groovy
 stage('Quality Gate') {
     steps {
@@ -455,11 +456,11 @@ stage('Quality Gate') {
     }
 }
 ```
-- ✓ Vérification du Quality Gate
-- ✓ Status: **PASSED**
-- ✓ Timeout configuré (5 minutes)
+-  Vérification du Quality Gate
+-  Status: **PASSED**
+-  Timeout configuré (5 minutes)
 
-#### Stage 7: Package ✅
+#### Stage 7: Package 
 ```groovy
 stage('Package') {
     steps {
@@ -472,36 +473,36 @@ stage('Package') {
     }
 }
 ```
-- ✓ Création du JAR exécutable
-- ✓ Archivage des artifacts
-- ✓ Fingerprinting pour traçabilité
+-  Création du JAR exécutable
+-  Archivage des artifacts
+-  Fingerprinting pour traçabilité
 
 ### 4.2 Configuration Jenkins
 
 #### Outils Requis
-- ✓ **Maven 3.8+** configuré
-- ✓ **JDK 11** configuré
-- ✓ **SonarQube Scanner** installé
+-  **Maven 3.8+** configuré
+-  **JDK 21** configuré
+-  **SonarQube Scanner** installé
 
 #### Plugins Installés
-- ✓ JUnit Plugin
-- ✓ JaCoCo Plugin
-- ✓ SonarQube Scanner Plugin
-- ✓ Pipeline Maven Integration
-- ✓ Git Plugin
+-  JUnit Plugin
+-  JaCoCo Plugin
+-  SonarQube Scanner Plugin
+-  Pipeline Maven Integration
+-  Git Plugin
 
 #### Serveur SonarQube
-- ✓ URL: http://localhost:9000
-- ✓ Token configuré
-- ✓ Quality Gate configuré
+-  URL: http://localhost:9000
+-  Token configuré
+-  Quality Gate configuré
 
 ### 4.3 Notifications
 
 ```groovy
 post {
     success {
-        mail to: 'team@ensam.ma',
-             subject: "✅ Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+        mail to: "${env.PROD_MAIL}",
+             subject: "Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
              body: """
                  Build réussi avec succès!
                  
@@ -513,8 +514,8 @@ post {
              """
     }
     failure {
-        mail to: 'team@ensam.ma',
-             subject: "❌ Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+        mail to: "${env.PROD_MAIL}",
+             subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
              body: """
                  Le build a échoué.
                  
@@ -532,23 +533,23 @@ post {
 
 ```
 ┌─────────────────────────────────────────────────┐
-│              Interface Utilisateur               │
-│                   (MainApp)                      │
+│              Interface Utilisateur              │
+│                   (MainApp)                     │
 │            [NON TESTÉ - EXCLU]                  │
 └────────────────────┬────────────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────────────┐
-│             Couche Contrôleur                    │
-│           (BankingController)                    │
-│      [TESTÉ - 26 tests - 80% couverture]       │
+│             Couche Contrôleur                   │
+│           (BankingController)                   │
+│      [TESTÉ - 26 tests - 80% couverture]        │
 └────────────────────┬────────────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────────────┐
-│             Couche Service                       │
+│             Couche Service                      │
 │    (BankingService, TransactionService)         │
-│      [TESTÉ - 13 tests - 83% couverture]       │
+│      [TESTÉ - 13 tests - 83% couverture]        │
 └────────────────────┬────────────────────────────┘
                      │
         ┌────────────┼────────────┐
@@ -570,7 +571,7 @@ post {
 
 ### 5.2 Design Patterns Implémentés
 
-#### 1. Strategy Pattern (Couverture: 100%) ✅
+#### 1. Strategy Pattern (Couverture: 100%) 
 
 **Classes:**
 - `TransactionStrategy` (interface)
@@ -583,7 +584,7 @@ post {
 - Séparation des algorithmes de transaction
 - Facilite les tests unitaires
 
-#### 2. Factory Pattern (Couverture: 94%) ✅
+#### 2. Factory Pattern (Couverture: 94%) 
 
 **Classes:**
 - `AccountFactory` (4 tests)
@@ -594,7 +595,7 @@ post {
 - Validation des données à la création
 - Gestion des identifiants uniques
 
-#### 3. Observer Pattern (Couverture: 87%) ✅
+#### 3. Observer Pattern (Couverture: 87%) 
 
 **Classes:**
 - `TransactionObserver` (interface)
@@ -606,7 +607,7 @@ post {
 - Notifications en temps réel
 - Extensibilité (ajout facile de nouveaux observateurs)
 
-#### 4. MVC Pattern (Couverture: 80%) 🆕
+#### 4. MVC Pattern (Couverture: 80%) 
 
 **Classes:**
 - `BankingController` (26 tests)
@@ -672,32 +673,32 @@ com.university.finance
 
 ## 7. Artifacts et Livrables
 
-### 7.1 Code Source ✅
+### 7.1 Code Source 
 - ✓ 16 classes Java (src/main/java)
 - ✓ 11 classes de test (src/test/java)
 - ✓ 3 Design Patterns implémentés
 - ✓ 1 Contrôleur MVC
 - ✓ Architecture modulaire
 
-### 7.2 Tests et Rapports ✅
+### 7.2 Tests et Rapports 
 - ✓ 78 tests unitaires (100% succès)
 - ✓ Rapport JUnit XML
 - ✓ Rapport JaCoCo HTML/XML/CSV
 - ✓ Couverture 86.9%
 
-### 7.3 Configuration CI/CD ✅
+### 7.3 Configuration CI/CD 
 - ✓ Jenkinsfile complet (7 stages)
 - ✓ pom.xml Maven configuré
 - ✓ Intégration SonarQube
 - ✓ Scripts de build automatisés
 
-### 7.4 Analyse Qualité ✅
+### 7.4 Analyse Qualité 
 - ✓ sonar-project.properties configuré
 - ✓ Quality Gate: PASSED
 - ✓ 0 bugs, 0 vulnérabilités
 - ✓ Rating A sur tous les critères
 
-### 7.5 Documentation ✅
+### 7.5 Documentation 
 - ✓ README.md complet avec diagrammes UML
 - ✓ RAPPORT_LIVRABLES.md (ce document)
 - ✓ DASHBOARD.md avec métriques visuelles
@@ -707,26 +708,25 @@ com.university.finance
 
 ### 7.6 Fichiers Générés
 ```
-refactored-finance-app/
-├── target/
-│   ├── classes/                              [Classes compilées]
-│   ├── test-classes/                         [Tests compilés]
-│   ├── surefire-reports/                     [Rapports JUnit]
-│   ├── site/jacoco/                          [Rapports JaCoCo]
-│   ├── jacoco.exec                           [Données couverture]
-│   └── refactored-finance-app-1.0.0.jar     [JAR exécutable]
-│
-├── docs/                                     [Documentation]
-│   ├── README.md
-│   ├── RAPPORT_LIVRABLES.md
-│   ├── DASHBOARD.md
-│   ├── ARCHITECTURE_CONTROLLER.md
-│   └── SONARQUBE_SETUP.md
-│
-├── src/                                      [Code source]
-├── pom.xml                                   [Configuration Maven]
-├── Jenkinsfile                               [Pipeline CI/CD]
-└── sonar-project.properties                  [Config SonarQube]
+├──refactored-finance-app/
+│   ├── target/
+│   │   ├── classes/                              [Classes compilées]
+│   │   ├── test-classes/                         [Tests compilés]
+│   │   ├── surefire-reports/                     [Rapports JUnit]
+│   │   ├── site/jacoco/                          [Rapports JaCoCo]
+│   │   ├── jacoco.exec                           [Données couverture]
+│   │   └── refactored-finance-app-1.0.0.jar     [JAR exécutable]
+│   │
+│   │
+│   ├── src/                                      [Code source]
+│   ├── pom.xml                                   [Configuration Maven]
+│   ├── Jenkinsfile                               [Pipeline CI/CD]
+│   └── sonar-project.properties                  [Config SonarQube]
+├── README.md
+├── RAPPORT_LIVRABLES.md
+├── DASHBOARD.md
+├── ARCHITECTURE_CONTROLLER.md
+└── SONARQUBE_SETUP.md
 ```
 
 ---
@@ -774,7 +774,7 @@ refactored-finance-app/
 
 ## 9. Validation des Exigences du Projet
 
-### 9.1 Exigences Fonctionnelles ✅
+### 9.1 Exigences Fonctionnelles 
 
 | Exigence | Statut | Preuve |
 |----------|--------|--------|
@@ -801,14 +801,14 @@ refactored-finance-app/
 
 ### 9.3 Livrables Demandés ✅
 
-- ✅ Code source refactorisé avec patterns
-- ✅ Tests unitaires (78 tests, >80% couverture)
-- ✅ Jenkinsfile fonctionnel (7 stages)
-- ✅ Rapport de couverture JaCoCo
-- ✅ Rapport de qualité SonarQube
-- ✅ Documentation technique complète
-- ✅ Diagrammes UML (classes et séquence)
-- ✅ Guide d'installation et d'utilisation
+-  Code source refactorisé avec patterns
+-  Tests unitaires (78 tests, >80% couverture)
+-  Jenkinsfile fonctionnel (7 stages)
+-  Rapport de couverture JaCoCo
+-  Rapport de qualité SonarQube
+-  Documentation technique complète
+-  Diagrammes UML (classes et séquence)
+-  Guide d'installation et d'utilisation
 
 ---
 
@@ -909,54 +909,54 @@ refactored-finance-app/
 ║           DASHBOARD PROJET - RÉSULTATS FINAUX            ║
 ╠══════════════════════════════════════════════════════════╣
 ║                                                          ║
-║  📊 TESTS UNITAIRES                                      ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║   Total:              78 tests                      ✅   ║
-║   Succès:             78 (100%)                     ✅   ║
-║   Échecs:              0 (0%)                       ✅   ║
-║   Temps:              ~4.5s                         ✅   ║
+║  TESTS UNITAIRES                                         ║
+║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━║
+║   Total:              78 tests                           ║
+║   Succès:             78 (100%)                          ║
+║   Échecs:              0 (0%)                            ║
+║   Temps:              ~4.5s                              ║
 ║                                                          ║
-║  📈 COUVERTURE DE CODE                                   ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║   Instructions:       86.9% (1,340/1,542)          ✅   ║
-║   Branches:           78% (64/82)                   ✅   ║
-║   Lignes:             87% (267/307)                 ✅   ║
-║   Méthodes:           88% (88/100)                  ✅   ║
-║   Classes:            93% (14/15)                   ✅   ║
-║   Objectif:           ≥ 80%                         ✅   ║
+║  COUVERTURE DE CODE                                      ║
+║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━║
+║   Instructions:       86.9% (1,340/1,542)                ║
+║   Branches:           78% (64/82)                        ║
+║   Lignes:             87% (267/307)                      ║
+║   Méthodes:           88% (88/100)                       ║
+║   Classes:            93% (14/15)                        ║
+║   Objectif:           ≥ 80%                              ║
 ║                                                          ║
-║  🎯 SONARQUBE QUALITY GATE                               ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║   Status:             PASSED                        ✅   ║
-║   Bugs:               0                             ✅   ║
-║   Vulnerabilities:    0                             ✅   ║
-║   Code Smells:        0 (nouveau)                   ✅   ║
-║   Coverage:           86.9%                         ✅   ║
-║   Duplications:       0.0%                          ✅   ║
-║   Security Hotspots:  0 (Rating A)                  ✅   ║
+║  SONARQUBE QUALITY GATE                                  ║
+║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━║
+║   Status:             PASSED                             ║
+║   Bugs:               0                                  ║
+║   Vulnerabilities:    0                                  ║
+║   Code Smells:        0 (nouveau)                        ║
+║   Coverage:           86.9%                              ║
+║   Duplications:       0.0%                               ║
+║   Security Hotspots:  0 (Rating A)                       ║
 ║                                                          ║
-║  🏗️ ARCHITECTURE                                         ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║   Design Patterns:    4 (Strategy, Factory,         ✅   ║
+║  ARCHITECTURE                                            ║
+║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━║
+║   Design Patterns:    4 (Strategy, Factory,              ║
 ║                          Observer, MVC)                  ║
-║   Classes:            16 classes modulaires         ✅   ║
-║   Tests:              11 classes de test            ✅   ║
-║   Packages:           7 packages organisés          ✅   ║
+║   Classes:            16 classes modulaires              ║
+║   Tests:              11 classes de test                 ║
+║   Packages:           7 packages organisés               ║
 ║                                                          ║
-║  🚀 CI/CD PIPELINE                                       ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║   Stages:             7 stages fonctionnels         ✅   ║
-║   Build:              SUCCESS                       ✅   ║
-║   Tests:              78/78 PASSED                  ✅   ║
-║   Quality Gate:       PASSED                        ✅   ║
-║   Package:            JAR généré                    ✅   ║
+║  CI/CD PIPELINE                                          ║
+║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━║
+║   Stages:             7 stages fonctionnels              ║
+║   Build:              SUCCESS                            ║
+║   Tests:              78/78 PASSED                       ║
+║   Quality Gate:       PASSED                             ║
+║   Package:            JAR généré                         ║
 ║                                                          ║
-║  📚 DOCUMENTATION                                        ║
-║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
-║   README:             ✅ Complet avec UML                ║
-║   Rapports:           ✅ 5 documents détaillés           ║
-║   Javadoc:            ✅ Code commenté                   ║
-║   Diagrammes:         ✅ Classes et séquence             ║
+║  DOCUMENTATION                                           ║
+║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━║
+║   README:             Complet avec UML                   ║
+║   Rapports:           5 documents détaillés              ║
+║   Javadoc:            Code commenté                      ║
+║   Diagrammes:         Classes et séquence                ║
 ║                                                          ║
 ╚══════════════════════════════════════════════════════════╝
 ```
@@ -974,26 +974,6 @@ refactored-finance-app/
 | **Nombre de tests** | 78 | >20 | ✅ 390% |
 | **Duplication code** | 0.0% | <3% | ✅ 100% |
 
-### 11.3 Scores Globaux
-
-```
-┌────────────────────────────────────────┐
-│      NOTES FINALES DU PROJET           │
-├────────────────────────────────────────┤
-│                                        │
-│  Tests Unitaires:          20/20  ⭐   │
-│  Couverture Code:          19/20  ⭐   │
-│  Qualité SonarQube:        20/20  ⭐   │
-│  Architecture:             20/20  ⭐   │
-│  CI/CD Pipeline:           20/20  ⭐   │
-│  Documentation:            20/20  ⭐   │
-│                                        │
-│  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
-│  SCORE TOTAL:             119/120      │
-│                           99.2%   🏆   │
-└────────────────────────────────────────┘
-```
-
 ---
 
 ## 12. Conclusion
@@ -1004,12 +984,12 @@ Le projet de refactoring de l'application bancaire a été **complété avec un 
 
 ### 12.2 Objectifs Atteints
 
-✅ **Refactoring complet**: Transformation d'un code "spaghetti" en architecture modulaire  
-✅ **4 Design Patterns**: Strategy, Factory, Observer, MVC implémentés et testés  
-✅ **78 tests unitaires**: 100% de succès, couverture 86.9%  
-✅ **Quality Gate PASSED**: 0 bugs, 0 vulnérabilités, rating A partout  
-✅ **Pipeline CI/CD**: 7 stages fonctionnels de bout-en-bout  
-✅ **Documentation exhaustive**: 5 documents + diagrammes UML  
+ **Refactoring complet**: Transformation d'un code "spaghetti" en architecture modulaire  
+ **4 Design Patterns**: Strategy, Factory, Observer, MVC implémentés et testés  
+ **78 tests unitaires**: 100% de succès, couverture 86.9%  
+ **Quality Gate PASSED**: 0 bugs, 0 vulnérabilités, rating A partout  
+ **Pipeline CI/CD**: 7 stages fonctionnels de bout-en-bout  
+ **Documentation exhaustive**: 5 documents + diagrammes UML  
 
 ### 12.3 Points Forts du Projet
 
@@ -1056,18 +1036,7 @@ Le projet est **prêt pour la production** et peut être livré immédiatement. 
 
 Ce projet démontre l'application rigoureuse des principes SOLID, des design patterns, et des meilleures pratiques DevOps. Il constitue une référence exemplaire pour les projets de refactoring et d'amélioration continue de la qualité logicielle.
 
----
-
-**Statut Final:** ✅ **PROJET VALIDÉ ET LIVRÉ**  
-**Date de livraison:** 31 Décembre 2025  
-**Version:** 1.0.0  
-**Qualité:** Excellence (A+ / 99.2%)
-
----
-
 ## Annexes
-
-### A. Commandes Utiles
 
 #### Build et Tests
 ```bash
@@ -1088,39 +1057,3 @@ mvn package
 
 # Exécuter l'application
 java -jar target/refactored-finance-app-1.0.0.jar
-```
-
-#### SonarQube (Docker)
-```bash
-# Démarrer SonarQube
-docker run -d --name sonarqube -p 9000:9000 sonarqube:latest
-
-# Arrêter
-docker stop sonarqube
-
-# Redémarrer
-docker start sonarqube
-
-# Voir les logs
-docker logs sonarqube
-```
-
-### B. URLs Importantes
-
-- **Repository Git**: https://github.com/youneselhafidy/refactored-finance-app
-- **SonarQube**: http://localhost:9000/dashboard?id=refactored-finance-app
-- **Rapport JaCoCo**: file:///target/site/jacoco/index.html
-- **Jenkins**: http://localhost:8080 (si configuré)
-
-### C. Contacts
-
-- **Équipe Projet**: team@ensam.ma
-- **Support SonarQube**: https://community.sonarsource.com
-- **Documentation Jenkins**: https://www.jenkins.io/doc/
-
----
-
-**Rapport généré le:** 31 Décembre 2025  
-**Auteur:** Équipe de Développement  
-**Version du rapport:** 2.0 (Mise à jour finale)  
-**Statut:** ✅ VALIDÉ ET APPROUVÉ
